@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>slick slider</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    </head>
+    <body>
+        <header id="wrapper">
+            <div class="menu-area">
+                <div class="logo">
+                    <h2>Slick Slider</h2>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="thing" id="wrapper">
+            <div><img src="img/babystern2.jpg" alt="slider image"></div>
+            <div><img src="img/babystern3.jpg" alt="slider image"></div>
+            <div><img src="img/main-inpersonatorjpg.jpg" alt="slider image"></div>
+        </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript">
+        $(document) .ready(function(){
+            $('.thing').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1000
+            });
+        });
+    </script>
+    </body>
+</html>
